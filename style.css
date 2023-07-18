@@ -1,0 +1,24 @@
+
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, 1fr)); /* Two columns with equal size */
+    grid-template-rows: repeat(2, minmax(50px, 1fr));    /* Two rows with equal size */
+    gap: 10px; 
+}
+
+#red{
+    background-color: red;
+}
+
+#blue{
+    background-color: blue;
+
+}
+
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: yellow;
+}
