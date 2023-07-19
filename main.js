@@ -1,7 +1,7 @@
-import {Player} from "./player.js";
+import {Player, Cpu} from "./player.js";
 
 const player = Player();
-const cpu = Player();
+const cpu = Cpu();
 let started = false;
 let level = 0;
 console.log(level);
@@ -18,5 +18,15 @@ $(document).keypress(function() {
     startGame();
   }
 });
+
+
+player.pickColor()
+
+if( player.getColorPattern() == cpu.getColorPattern()){
+    console.log("success")
+}else{
+    console.log("failure")
+}
+
 
 console.log("test");
